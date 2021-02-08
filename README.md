@@ -1,5 +1,5 @@
 # doudhal
-![Logo de Doudhal](https://doudhal.planethoster.world/public/images/logo/doudhal.png)
+![Doudhal](https://doudhal.planethoster.world/public/images/courses/course-cover.jpg)
 
 L’entreprise **Gui-Plus** souhaite mettre en place une plateforme de mise en ligne de ses
 différentes formations effectuées par les formateurs agrées.
