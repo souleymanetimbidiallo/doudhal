@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CATALOG>
+  <Cours>
+    <Titre>Apprendre PHP</Titre>
+    <Auteur>John Doe</Auteur>
+    <Categorie>Informatique</Categorie>
+    <Duree>40</Duree>
+    <Prix>49.99</Prix>
+  </Cours>
+  <Cours>
+    <Titre>Gestion de projet</Titre>
+    <Auteur>Michel Franchin</Auteur>
+    <Categorie>Management</Categorie>
+    <Duree>25</Duree>
+    <Prix>25.00</Prix>
+  </Cours>
+  <Cours>
+    <Titre>Anglais</Titre>
+    <Auteur>Samantha Wright</Auteur>
+    <Categorie>Langues</Categorie>
+    <Duree>20</Duree>
+    <Prix>39.99</Prix>
+  </Cours>
+  <Cours>
+    <Titre>Entrepreunariat</Titre>
+    <Auteur>Karl Fernandez</Auteur>
+    <Categorie>Management</Categorie>
+    <Duree>15</Duree>
+    <Prix>Gratuit</Prix>
+  </Cours>
+</CATALOG>

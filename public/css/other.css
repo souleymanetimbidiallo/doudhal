@@ -1,0 +1,21 @@
+.fond{
+    background: url("../../public/images/blue-gradient.jpeg") no-repeat;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100vh;
+}
+.form-container{
+    padding: 30px 60px;
+    margin-top: 10vh;
+    box-shadow: -10px 4px 26px 11px rgba(0, 0, 0, 0.75);
+}
+button{
+    box-shadow: -1px 4px 26px 11px rgba(0, 0, 0, 0.75);
+}
+input:invalid {
+    box-shadow: 0 0 5px 1px red;
+}
+  
+input:focus:invalid {
+    outline: none;
+}

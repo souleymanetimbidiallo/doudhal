@@ -1,0 +1,34 @@
+<html>
+<head>
+</head>
+<body>
+
+<form>
+Selectionner un formateur:
+<select name="cds" onchange="showCD(this.value)">
+  <option value="">Faites de votre choix:</option>
+  <option value="John Doe">John Doe</option>
+  <option value="Michel Franchin">Michel Franchin</option>
+  <option value="Samantha Wright">Samantha Wright</option>
+</select>
+</form>
+<div id="txtHint"><strong>Les infos sur le cours apparaitra ici...</strong></div>
+
+</body>
+<script>
+function showCD(str) {
+  if (str=="") {
+    document.getElementById("txtHint").innerHTML="";
+    return;
+  }
+  var xmlhttp=new XMLHttpRequest();
+  xmlhttp.onreadystatechange=function() {
+    if (this.readyState==4 && this.status==200) {
+      document.getElementById("txtHint").innerHTML=this.responseText;
+    }
+  }
+  xmlhttp.open("GET","example.php?q="+str,true);
+  xmlhttp.send();
+}
+</script>
+</html>

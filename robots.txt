@@ -1,0 +1,18 @@
+# Fichier pour les robots du site http://doudhal.planethoster.world/
+
+#Autorise l’accès à tous les robots
+User-Agent: *
+
+#Interdit l’exploration du dossier app, core
+Disallow: /app/
+Disallow: /core/
+
+#Interdit l’exploration de l’url http://doudhal.planethoster.world/pages/users/login.php
+Disallow: /pages/users/login.php
+
+#Autorise l’accès à toutes les ressources css et js
+Allow: /*.css?*
+Allow: /*.js?*
+
+#Lien vers le sitemap pour le référencement
+Sitemap: http://doudhal.planethoster.world/sitemap.xml

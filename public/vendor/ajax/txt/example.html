@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+      <title>CGU</title>
+  </head>
+  <body>
+    <div id="demo">
+      <h2>Conditions générales d'utilisation</h2>
+
+      <button id="btnLoad" type="button">
+        Recharger le contenu
+      </button>
+    </div>
+
+    <script>
+        var btnLoad = document.getElementById('btnLoad');
+        btnLoad.addEventListener('click', function(){
+            var xhttp;
+            xhttp = new XMLHttpRequest();
+            xhttp.onreadystatechange = function () {
+              if (this.readyState == 4 && this.status == 200) {
+                const lines = xhttp.responseText.split('\n');
+                var demo = document.getElementById("demo");
+                demo.innerHTML = "";
+                for(var i=0; i<lines.length; i++){
+
+                    demo.innerHTML += lines[i]+"<br>";
+                }
+              }
+            };
+            xhttp.open("GET", "data.txt", true);
+            xhttp.send();
+        });
+    </script>
+  </body>
+</html>

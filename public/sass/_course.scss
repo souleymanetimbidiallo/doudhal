@@ -1,0 +1,32 @@
+.course-cover{
+  background: url('../images/courses/course-cover.jpg') no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+}
+
+.course-card{
+  $self: &;
+    color: $dark;
+    background-color: $white;
+
+    img {
+        opacity: .2;
+    }
+    .btn{
+      opacity: .2;
+    }
+    &:hover {
+        .card-body {
+          color: $white;
+            background: $dark;
+        }
+        img{
+            opacity: 1;
+        }
+        .btn{
+          opacity: 1;
+        }
+    }
+}
